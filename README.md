@@ -15,7 +15,7 @@ This repository contains code and model architectures for **Jaguar Re-Identifica
 - [Model Architectures](#model-architectures)
 - [State-of-the-Art Methods and Key References](#state-of-the-art-methods-and-key-references)
 - [License](#license)
-
+- [Result](#result)
 ---
 
 ## Project Overview
@@ -54,6 +54,28 @@ git clone https://github.com/mumtazuk/JaguarFinder
 cd jaguar-reid
 pip install -r requirements.txt
 ```
+---
+## Model Architectures
+
+This project evaluates Swin Transformer deep learning architectures for jaguar re-identification.
+
+
+### Swin Transformer
+- Hierarchical transformer with shifted windows
+- Efficient for high-resolution images
+- Used as the main model in this project
+
+---
+Architecture pipeline:
+Image
+ ↓
+Swin Transformer
+ ↓
+Feature Vector
+ ↓
+Embedding Layer
+ ↓
+Cosine Similarity
 ---
 
 ## State-of-the-Art Methods and Key References
@@ -223,6 +245,12 @@ https://link.springer.com/10.1007/s11263-025-02708-9
 
 
 ---
+
+## Result
+| Model    | Loss     | Notes            |
+| -------- | -------- | ---------------- |
+| Swin     | **0.79** | best performance |
+
 
 
 ## License
