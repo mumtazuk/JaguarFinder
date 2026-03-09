@@ -14,8 +14,9 @@ This repository contains code and model architectures for **Jaguar Re-Identifica
 - [Usage](#usage)
 - [Model Architectures](#model-architectures)
 - [State-of-the-Art Methods and Key References](#state-of-the-art-methods-and-key-references)
-- [License](#license)
 - [Result](#result)
+- [Future Work / Next Version](#future-work--next-version)
+- [License](#license)
 ---
 
 ## Project Overview
@@ -66,16 +67,9 @@ This project evaluates Swin Transformer deep learning architectures for jaguar r
 - Used as the main model in this project
 
 ---
-Architecture pipeline:
-Image
- ↓
-Swin Transformer
- ↓
-Feature Vector
- ↓
-Embedding Layer
- ↓
-Cosine Similarity
+## Architecture Pipeline:
+
+Input Image → Swin Transformer Backbone → Feature Vector → Embedding Layer (512-D) → Cosine Similarity
 ---
 
 ## State-of-the-Art Methods and Key References
@@ -251,6 +245,9 @@ https://link.springer.com/10.1007/s11263-025-02708-9
 | -------- | -------- | ---------------- |
 | Swin     | **0.79** | best performance |
 
+
+## Future Work / Next Version
+This project currently implements Jaguar ReID using Swin Base (swin_base_patch4_window7_224), achieving a baseline score of 0.689. Next, I plan to systematically evaluate Swin Tiny, Swin Small, ViT Base/Small, and ResNet50/101 to compare embeddings and similarity performance. This research-driven approach aims to identify the optimal model, demonstrating strong potential for advanced machine learning studies.
 
 
 ## License
